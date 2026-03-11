@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html>
+
+        <head>
+            <title> Checkout Calculator </title>
+            <meta charset="UTF-8">
+            <meta name="author" content="Abigail Jumaran Perez">
+        </head>
+
+        <body>
+            <form name="checkout-form" action="checkout.html" onsubmit="return validateForm()"> 
+
+                <label> Customer name: </label>
+                <input type="text" name="customer" id="customer" required>
+
+                <br><br>
+                
+                <label form="numberOfSoda"> Soda: </label>
+                <input type="number" name="numberOfSoda" id="numberOfSoda" min="1" max="100" required step="1">
+
+                <br><br>
+
+                <label form="numberOfChips"> Chips: </label>
+                <input type="number" name="numberOfChips" id="numberOfChips" min="1" max="100" required step="1">
+
+                <br><br>
+
+                <label form="payment"> Payment: </label>
+                <input type="number" name="payment" id="payment" required>
+                <br><br>
+
+                <button type="submit"> Submit </button> 
+                <button type="reset"> Reset </button>
+
+            </form>
+
+            <script src="calc.js"> </script>
+
+        </body>
+
+    </html>
